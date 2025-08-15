@@ -84,9 +84,9 @@ npm run dev
 ```
 
 ## Features
-- Feature 1
-- Feature 2
-- Feature 3
+- Login/Signup
+- Chat
+- Dashboard
 
 ## Technologies
 - Next.js
