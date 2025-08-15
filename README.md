@@ -1,21 +1,30 @@
-# MJL_ChatSystem
+# MJL Chat System
 
-## Prerequisites
+## Quick Installation
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/MikeJoshuaLopena4/MJL_ChatSystem/main/install.sh | sudo bash
+```
+
+## Manual Installation
+
+### Prerequisites
 - Docker
 - Docker Compose
 - Git
+- Node.js 18+
 
-## Quick Start
+### Steps
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
+git clone https://github.com/MikeJoshuaLopena4/MJL_ChatSystem.git
+cd MJL_ChatSystem
 ```
 
-2. Create necessary environment files:
+2. Set up environment files:
 
-For client (.env.local):
+Client (.env.local):
 ```bash
 SERVER_IP=https://localhost
 HOSTNAME=localhost
@@ -25,7 +34,7 @@ NEXT_PUBLIC_SOCKET_SERVER_URL=https://localhost:5000
 NEXT_PUBLIC_PORT=3000
 ```
 
-For server (.env):
+Server (.env):
 ```bash
 ALLOWED_ORIGINS=https://localhost,https://localhost:5000,http://localhost:3000
 PORT=5000
@@ -40,20 +49,10 @@ JWT_SECRET=your_secret_here
 JWT_EXPIRES_IN=7d
 ```
 
-3. Generate SSL certificates:
-```bash
-mkcert localhost
-```
-Move the generated certificates to `server/ssl/`
-
-4. Start the application:
+3. Start with Docker:
 ```bash
 docker-compose up -d
 ```
-
-5. Access the application:
-- Frontend: https://localhost:3000
-- Backend: https://localhost:5000
 
 ## Development
 
@@ -71,7 +70,7 @@ npm install
 npm run dev
 ```
 
-## Directory Structure
+## Structure
 ```
 .
 ├── client/                   # Next.js frontend
@@ -84,9 +83,11 @@ npm run dev
 ```
 
 ## Features
-- Login/Signup
-- Chat
-- Dashboard
+- Real-time chat
+- User authentication
+- Dark/Light mode
+- Weather integration
+- Attendance tracking
 
 ## Technologies
 - Next.js
@@ -96,8 +97,5 @@ npm run dev
 - Docker
 - Nginx
 
-## Contributing
-Instructions for contributing to your project
-
 ## License
-MIT License or your chosen license
+MIT License
