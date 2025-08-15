@@ -1,8 +1,5 @@
 # MJL_ChatSystem
 
-## Overview
-Brief description of your project
-
 ## Prerequisites
 - Docker
 - Docker Compose
