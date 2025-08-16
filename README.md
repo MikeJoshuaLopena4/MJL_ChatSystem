@@ -1,4 +1,5 @@
 # MJL Chat System
+-- Websocket wss://
 
 ## Quick Installation
 
